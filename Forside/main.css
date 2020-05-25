@@ -150,7 +150,6 @@ body input:checked~.navbg>.ulist>.listitem {
   box-sizing: border-box;
   border: none;
   border-radius: 4px;
-
   width: 85%;
   height: 108px;
   text-transform: uppercase;
@@ -170,8 +169,6 @@ body input:checked~.navbg>.ulist>.listitem {
   text-decoration: none;
   margin: 12px 0px;
 }
-
-
 
 /* Overlay */
 .pure-material-button-contained::before {
@@ -247,14 +244,44 @@ body input:checked~.navbg>.ulist>.listitem {
 
 .sticky {
   position: fixed;
-  top: 90vh;
+  top: 92vh;
   width: 100vw;
-  height: 10vh;
+  height: 8vh;
   background-color: blue;
-  display:grid;
+  display: grid;
   grid-template-columns: 1fr 1fr;
+  text-align: center;
 }
 
-.leftbutton{
+.lftbtn {
   grid-column: 1/2;
+  background-color: red;
+}
+
+.rgtbtn {
+  grid-column: 2/3;
+}
+
+.takeaway {
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Open Sans';
+  text-decoration: none;
+}
+
+.updatetxt{
+  width: 100vw;
+  height: 400px;
+  background-color: green;
+  text-align: center;
+
+}
+
+#testsheets{
+  margin: 0px;
+  color: white;
+  padding: 20px 0px;
+  text-transform: uppercase;
+  font-family: 'Open Sans';
+  font-size: 24px;
 }

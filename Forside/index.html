@@ -41,11 +41,17 @@
   <a class="pure-material-button-contained" href="index.html">kontakt</a>
 </div>
 <div class="sticky">
-<div class="leftbutton">
-
+<div class="lftbtn">
+  <h2><a class="takeaway" href="index.html">book bord</a></h2>
+</div>
+<div class="rgtbtn">
+    <h2><a class="takeaway" href="index.html">takeaway</a></h2>
 </div>
 </div>
+<section class="updatetxt">
 <p id="testsheets"></p>
+</section>
+
 
 
 
@@ -62,7 +68,7 @@
 
   function showInfo(data, tabletop) {
 
-    document.getElementById('testsheets').innerHTML = data[0].test;
+    document.getElementById('testsheets').innerHTML = data[0].overskrift;
     console.log(data);
     ;
   }
