@@ -30,6 +30,10 @@ body .logo>span {
   font-size: 12px;
 }
 
+body input{
+   visibility: hidden;
+}
+
 body input+label {
   position: fixed;
   top: 40px;
@@ -49,6 +53,7 @@ body input+label span {
   display: block;
   background: #020304;
   transition: .5s;
+
 }
 
 body input+label span:first-child {
@@ -61,11 +66,13 @@ body input+label span:last-child {
 
 body label:hover {
   cursor: pointer;
+
 }
 
 body input:checked+label span {
   opacity: 0;
   top: 50%;
+
 }
 
 body input:checked+label span:first-child {
@@ -79,7 +86,7 @@ body input:checked+label span:last-child {
 }
 
 body input~.navbg {
-
+  background: #fffff0;
   position: fixed;
   top: 0;
   left: 0;
