@@ -1,7 +1,5 @@
-
-
 body {
-  background: #fffff0;
+  background: #ffffff;
   margin: 0px;
 }
 
@@ -18,7 +16,6 @@ body .logo {
 }
 
 /*forside*/
-
 .ulist {
   list-style: none;
 }
@@ -30,8 +27,8 @@ body .logo>span {
   font-size: 12px;
 }
 
-body input{
-   visibility: hidden;
+body input {
+  visibility: hidden;
 }
 
 body input+label {
@@ -53,7 +50,6 @@ body input+label span {
   display: block;
   background: #020304;
   transition: .5s;
-
 }
 
 body input+label span:first-child {
@@ -66,13 +62,11 @@ body input+label span:last-child {
 
 body label:hover {
   cursor: pointer;
-
 }
 
 body input:checked+label span {
   opacity: 0;
   top: 50%;
-
 }
 
 body input:checked+label span:first-child {
@@ -86,7 +80,7 @@ body input:checked+label span:last-child {
 }
 
 body input~.navbg {
-  background: #fffff0;
+  background: #fff8e9;
   position: fixed;
   top: 0;
   left: 0;
@@ -150,11 +144,13 @@ body input:checked~.navbg>.ulist>.listitem {
   background-position: center;
 }
 
-.fronttext{
-  color: white;
+.fronttext {
+  color: black;
   font-family: 'Open Sans';
+  font-weight: normal;
   margin-top: 200px;
   padding: 48px 24px;
+  font-size: 24pt;
 }
 
 .buttons {
@@ -287,29 +283,119 @@ body input:checked~.navbg>.ulist>.listitem {
   text-decoration: none;
 }
 
-.updatetxt{
-  width: 100vw;
+.updatetxt {
+  width: 85vw;
   height: 400px;
-  background-color: green;
+  background-color: #F2F2F2;
   text-align: center;
-
+  margin: auto;
+  border-radius: 4pt;
 }
 
-#testsheets{
+#titletxt {
   margin: 0px;
-  color: white;
+  color: black;
   padding: 20px 0px;
   text-transform: uppercase;
   font-family: 'Open Sans';
   font-size: 24px;
 }
-.red{
+
+#subtxt {
+  margin: 0px;
+  color: black;
+  padding: 20px 20px;
+  font-family: 'Open Sans';
+  font-size: 12pt;
+}
+
+.red {
   background-color: #fffff0;
 }
 
-.start{
+.start {
   height: 550px;
 }
 
+.menubutton {
+  text-decoration: none;
+  color: black;
+  background-color: #FFF8E9;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-family: 'Open Sans';
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.btn {
+  text-align: center;
+}
+
+footer {
+  margin-top: 24px;
+  background-color: #fff8e9;
+  width: 100%;
+  text-align: center;
+}
+
+.fødevarestyrelsen {
+  width: 120px;
+  margin: auto;
+  font-size: 8pt;
+  font-family: 'Open Sans';
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+
+.fødevarestyrelsen img {
+  width: 80px;
+}
+
+.footertxt {
+  color: black;
+  font-family: 'Open Sans';
+  font-weight: 300;
+  font-size: 12pt;
+  margin: 0;
+}
+
+.footerheading {
+  color: black;
+  font-family: 'Open Sans';
+  font-weight: normal;
+  font-size: 14pt;
+  padding: 36px 24px 24px 24px;
+}
+
+.sitemap {
+  color: black;
+  font-family: 'Open Sans';
+  font-weight: bold;
+  font-size: 12pt;
+}
+
+.sitemap-links {
+  color: black;
+  font-family: 'Open Sans';
+  font-weight: bold;
+  font-size: 12pt;
+  padding: 0px 24px;
+}
+
+.sitelinks {
+  text-decoration: none;
+  color: black;
+  line-height: 36pt;
+  text-transform: uppercase;
+}
+
+.cpright {
+  font-family: 'Open Sans';
+  font-weight: lighter;
+  font-size: 8pt
+}
 
 /* forside end */
