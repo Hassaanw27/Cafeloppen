@@ -1,7 +1,7 @@
-
 body {
   background: #ffffff;
   margin: 0px;
+
 }
 
 body .logo {
@@ -279,9 +279,11 @@ body input:checked~.navbg>.ulist>.listitem {
   width: 100%;
   height: 100%;
 }
+
 .js-lftbtn {
   border-top: 2px solid #72cc9b;
 }
+
 .rgtbtn {
   color: black;
   background-color: #fff8e9;
@@ -291,29 +293,25 @@ body input:checked~.navbg>.ulist>.listitem {
   width: 100%;
   height: 100%;
 }
+
 .js-rgtbtn {
   border-top: 2px solid #72cc9b;
 }
-
-
-
-
 
 .bordbooking {
   color: white;
   text-decoration: none;
   font-weight: normal;
-  height:100%;
-  line-height:8vh;
+  height: 100%;
+  line-height: 8vh;
 }
 
 .takeaway {
   color: black;
   text-decoration: none;
   font-weight: normal;
-  height:100%;
-  line-height:8vh;
-
+  height: 100%;
+  line-height: 8vh;
 }
 
 .updatetxt {
@@ -456,7 +454,6 @@ footer {
   background-color: #4F8F6C;
 }
 
-
 iframe {
   width: 90% !important;
   padding-bottom: 24px;
@@ -470,8 +467,6 @@ iframe {
   color: white;
   background-color: #4F8F6C;
 }
-
-
 
 /* forside end */
 /*kontakt*/
@@ -528,3 +523,97 @@ p {
 .embedmaps {}
 
 /*kontakt end */
+/*menu start*/
+.categories {
+  height: 100px;
+  width: 100%;
+  padding: 12px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  position: fixed;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.backplate {
+  height: 88px;
+  padding: 20px;
+  top: 0;
+
+}
+
+.categorystyling {
+  border: 1.5px solid black;
+  padding: 8px 12px;
+  font-family: 'Open Sans';
+  font-size: 8pt;
+  text-decoration: none;
+  color: black;
+  margin: 1px;
+  text-align: center;
+}
+
+.categorystyling:nth-child(1) {}
+
+.categorystyling:nth-child(2) {
+
+}
+
+.categorystyling:nth-child(5) {}
+
+.categorystyling:nth-child(6) {}
+
+.foodimg {
+  width: 100%;
+}
+
+.menuitems {
+  text-align: center;
+  font-family: 'Open Sans';
+}
+
+.menutitles {
+  font-weight: bold;
+  font-size: 20pt;
+  padding-top: 36px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.menudesc {
+  font-weight: lighter;
+  font-size: 12pt;
+
+}
+
+.price {
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.menuheadersmall{
+  font-weight: normal;
+  font-size: 12pt;
+  margin: 0;
+}
+
+h5{
+  font-family: 'Open Sans';
+  font-size: 12pt;
+  font-weight: bold;
+  margin: 0;
+}
+
+.dish{
+  padding-top: 36px;
+  max-width: 75%;
+  margin: auto;
+}
+
+.choosebetween{
+  font-size: 8pt;
+  font-weight: bold;
+  margin-top: 12px;
+}
