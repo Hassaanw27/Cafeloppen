@@ -440,3 +440,58 @@ iframe{
 }
 
 /* forside end */
+
+/*kontakt*/
+
+body input{
+   visibility: hidden;
+}
+
+
+ h3{
+   text-align: center;
+}
+
+h4{
+   margin-top: 1.5em;
+   margin-bottom: 0.5em;
+}
+
+p{
+   margin: 0;
+   font-style: light;
+}
+
+.kontakt{
+   font-family: 'Open Sans';
+   text-decoration: none;
+}
+
+.kontakt h2{
+
+   text-align: center;
+   font-size: 2.5em;
+   margin: 1em 0;
+ }
+
+ .kontakt p{
+     text-align: center;
+ }
+
+
+ .info{
+     text-align: center;
+     margin: 2em 0;
+ }
+
+
+ .maps{
+     text-align: center;
+     padding: 1em;
+ }
+
+ .embedmaps{
+
+ }
+
+ /*kontakt end */
