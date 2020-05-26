@@ -1,0 +1,365 @@
+
+
+body {
+    background: #F2F2F2;
+    margin: 0px;
+  }
+  
+  body .logo {
+    position: fixed;
+    top: 34px;
+    left: 34px;
+    z-index: 6;
+    font-size: 20px;
+    font-weight: 900;
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+    width: 40%;
+  }
+  
+  /*forside*/
+  
+  .ulist {
+    list-style: none;
+  }
+  
+  body .logo>span {
+    text-transform: none;
+    opacity: .5;
+    font-weight: 300;
+    font-size: 12px;
+  }
+  
+  body input+label {
+    position: fixed;
+    top: 40px;
+    right: 40px;
+    height: 20px;
+    width: 15px;
+    z-index: 5;
+  }
+  
+  body input+label span {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 50%;
+    margin-top: -1px;
+    left: 0;
+    display: block;
+    background: #020304;
+    transition: .5s;
+  }
+  
+  body input+label span:first-child {
+    top: 3px;
+  }
+  
+  body input+label span:last-child {
+    top: 16px;
+  }
+  
+  body label:hover {
+    cursor: pointer;
+  }
+  
+  body input:checked+label span {
+    opacity: 0;
+    top: 50%;
+  }
+  
+  body input:checked+label span:first-child {
+    opacity: 1;
+    transform: rotate(405deg);
+  }
+  
+  body input:checked+label span:last-child {
+    opacity: 1;
+    transform: rotate(-405deg);
+  }
+  
+  body input~.navbg {
+  
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 3;
+    transition: .5s;
+    transition-delay: .5s;
+    overflow: hidden;
+  }
+  
+  body input~.navbg>.ulist {
+    text-align: center;
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    right: 20%;
+    padding: 0;
+  }
+  
+  body input~.navbg>.ulist>.listitem {
+    opacity: 0;
+    transition: .5s;
+    transition-delay: 0s;
+  }
+  
+  body input~.navbg>.ulist>.listitem>a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #020304;
+    font-weight: 700;
+    font-family: 'Open Sans';
+    display: block;
+    padding: 30px;
+  }
+  
+  body input:checked~.navbg {
+    height: 100%;
+    transition-delay: 0s;
+  }
+  
+  body input:checked~.navbg>.ulist>.listitem {
+    opacity: 1;
+    transition-delay: .5s;
+  }
+  
+  .topbar {
+    height: 100px;
+    color: red;
+  }
+  
+  .frontimgcontainer {
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    top: 0;
+    margin: 0;
+    background-image: url('img/frontimage.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .fronttext{
+    color: white;
+    font-family: 'Open Sans';
+    margin-top: 200px;
+    padding: 48px 24px;
+  }
+  
+  .buttons {
+    margin-top: 24px;
+    text-align: center;
+  }
+  
+  .pure-material-button-contained {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 4px;
+    width: 85%;
+    height: 108px;
+    text-transform: uppercase;
+    color: white;
+    background-image: url("img/foodphotograph.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    font-family: 'Open Sans';
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 108px;
+    overflow: hidden;
+    outline: none;
+    transition: box-shadow 0.2s;
+    text-decoration: none;
+    margin: 12px 0px;
+  }
+  
+  /* Overlay */
+  .pure-material-button-contained::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+  
+  /* Ripple */
+  .pure-material-button-contained::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 50%;
+    padding: 50%;
+    width: 32px;
+    /* Safari */
+    height: 32px;
+    /* Safari */
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1);
+    transition: opacity 1s, transform 0.5s;
+  }
+  
+  /* Hover, Focus */
+  .pure-material-button-contained:hover,
+  .pure-material-button-contained:focus {
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+  }
+  
+  .pure-material-button-contained:hover::before {
+    opacity: 0.08;
+  }
+  
+  .pure-material-button-contained:focus::before {
+    opacity: 0.24;
+  }
+  
+  .pure-material-button-contained:hover:focus::before {
+    opacity: 0.3;
+  }
+  
+  /* Active */
+  .pure-material-button-contained:active {
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+  }
+  
+  .pure-material-button-contained:active::after {
+    opacity: 0.32;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0s;
+  }
+  
+  /* Disabled */
+  .pure-material-button-contained:disabled {
+    box-shadow: none;
+    cursor: initial;
+  }
+  
+  .pure-material-button-contained:disabled::before {
+    opacity: 0;
+  }
+  
+  .pure-material-button-contained:disabled::after {
+    opacity: 0;
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 92vh;
+    width: 100vw;
+    height: 8vh;
+    background-color: blue;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+  }
+  
+  .lftbtn {
+    grid-column: 1/2;
+    background-color: red;
+  }
+  
+  .rgtbtn {
+    grid-column: 2/3;
+  }
+  
+  .takeaway {
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Open Sans';
+    text-decoration: none;
+  }
+  
+  .updatetxt{
+    width: 100vw;
+    height: 400px;
+    background-color: green;
+    text-align: center;
+  
+  }
+  
+  #testsheets{
+    margin: 0px;
+    color: white;
+    padding: 20px 0px;
+    text-transform: uppercase;
+    font-family: 'Open Sans';
+    font-size: 24px;
+  }
+  .red{
+    background-color: #fffff0;
+  }
+  
+  .start{
+    height: 550px;
+  }
+  
+  
+  /* forside end */
+
+  
+
+
+
+
+  /* Kontakt Start */
+  body input{
+    visibility: hidden;
+}
+
+
+  h3{
+    text-align: center;
+}
+
+h4{
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+p{
+    margin: 0;
+    font-style: light;
+}
+
+.kontakt{
+    font-family: 'Open Sans';
+    text-decoration: none;
+}
+
+.kontakt h2{ 
+    
+    text-align: center;
+    font-size: 2.5em;
+    margin: 1em 0;
+  }
+
+  .kontakt p{
+      text-align: center;
+  }
+
+
+  .info{
+      text-align: center;
+      margin: 2em 0;
+  }
+
+
+  .maps{
+      text-align: center;
+      padding: 1em;
+  }
+
+  .embedmaps{
+      
+  }
