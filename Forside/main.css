@@ -35,8 +35,8 @@ body input+label {
   position: fixed;
   top: 40px;
   right: 40px;
-  height: 25px;
-  width: 25px;
+  height: 20px;
+  width: 15px;
   z-index: 5;
 }
 
@@ -57,7 +57,7 @@ body input+label span:first-child {
 }
 
 body input+label span:last-child {
-  top: 22px;
+  top: 16px;
 }
 
 body label:hover {
@@ -261,28 +261,26 @@ body input:checked~.navbg>.ulist>.listitem {
   top: 92vh;
   width: 100vw;
   height: 8vh;
-  background-color: #FFF8E9;
+  background-color: blue;
   display: grid;
   grid-template-columns: 1fr 1fr;
   text-align: center;
-  font-family: 'Open Sans';
-  text-transform: capitalize;
 }
 
 .lftbtn {
-  background-color: #4F8F6C;
+  grid-column: 1/2;
+  background-color: red;
 }
 
-.bordbooking {
-  color: white;
-  text-decoration: none;
-  font-weight: normal;
+.rgtbtn {
+  grid-column: 2/3;
 }
 
 .takeaway {
-  color: black;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Open Sans';
   text-decoration: none;
-  font-weight: normal;
 }
 
 .updatetxt {
@@ -321,9 +319,9 @@ body input:checked~.navbg>.ulist>.listitem {
 
 .menubutton {
   text-decoration: none;
-  color: white;
-  background-color: #4F8F6C;
-  padding: 8px 24px;
+  color: black;
+  background-color: #FFF8E9;
+  padding: 8px 16px;
   border-radius: 4px;
   font-family: 'Open Sans';
   font-weight: bold;
@@ -335,7 +333,7 @@ body input:checked~.navbg>.ulist>.listitem {
 }
 
 footer {
-  margin-top: 0px;
+  margin-top: 24px;
   background-color: #fff8e9;
   width: 100%;
   text-align: center;
@@ -369,8 +367,7 @@ footer {
   font-family: 'Open Sans';
   font-weight: normal;
   font-size: 14pt;
-  padding: 36px 24px 0px 24px;
-  margin-top: 0;
+  padding: 36px 24px 24px 24px;
 }
 
 .sitemap {
@@ -378,8 +375,6 @@ footer {
   font-family: 'Open Sans';
   font-weight: bold;
   font-size: 12pt;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .sitemap-links {
@@ -400,43 +395,7 @@ footer {
 .cpright {
   font-family: 'Open Sans';
   font-weight: lighter;
-  font-size: 8pt;
-  margin: 0;
-  padding-bottom: 75px;
-}
-
-.tel {
-  text-decoration: none;
-  color: black;
-  margin-right: 7px;
-}
-
-.addresstxt {
-  text-decoration: none;
-  color: black;
-}
-
-.instawidget{
-  width: 100%;
-  margin: auto;
-  margin-top: 24px;
-  height: auto;
-
-  text-align: center;
-  background-color: #4F8F6C;
-}
-
-iframe{
-  width: 90% !important;
-  padding-bottom: 24px;
-}
-
-.foelgos{
-  padding: 20px 20px 0px 20px;
-  font-family: 'Open Sans';
-  font-weight: lighter;
-  text-transform: uppercase;
-  color: white;
+  font-size: 8pt
 }
 
 /* forside end */
