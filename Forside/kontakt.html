@@ -69,10 +69,10 @@
 
   <div class="sticky">
     <div class="lftbtn">
-      <h2><a class="bordbooking" href="index.html">book bord</a></h2>
+      <a class="bordbooking" href="index.html">book bord</a>
     </div>
     <div class="rgtbtn">
-      <h2><a class="takeaway" href="index.html">takeaway</a></h2>
+      <a class="takeaway" href="index.html">takeaway</a>
     </div>
   </div>
 
@@ -97,31 +97,7 @@
       </script>
     </p>
   </footer>
-
-
-
-
-  <script type='text/javascript'>
-    var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/1odiRYpebHbk6Cf-ChQf0bp-e-HjoYNrJ-RyaQ8bGgxs/edit?usp=sharing';
-
-    function init() {
-      Tabletop.init({
-        key: publicSpreadsheetUrl,
-        callback: showInfo,
-        simpleSheet: true
-      })
-    }
-
-    function showInfo(data, tabletop) {
-
-      document.getElementById('titletxt').innerHTML = data[0].overskrift;
-      document.getElementById('subtxt').innerHTML = data[0].linjeet;
-      console.log(data);;
-    }
-
-    window.addEventListener('DOMContentLoaded', init)
-  </script>
-  <script src="script.js">
+  <script src="js/script.js">
 
   </script>
 </body>
