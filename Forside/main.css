@@ -532,7 +532,6 @@ p {
 #categories {
   height: 100px;
   width: 100%;
-  padding: 12px 0px;
   display: flex;
   flex-wrap: wrap;
   position: fixed;
@@ -559,10 +558,6 @@ p {
   background-color: none;
 }
 
-.active {
-    background-color: red;
-    color: #fff;
-}
 
 .categorystyling2 {
   background-color: green;
@@ -578,7 +573,9 @@ p {
 
 .foodimg {
   width: 100%;
+
 }
+
 
 .menuitems {
   text-align: center;
@@ -659,4 +656,11 @@ h5 {
   font-size: 8pt;
   font-weight: bold;
   margin-top: 12px;
+}
+
+/* new styling*/
+
+.active {
+  background-color: #4F8F6C;
+  color: white;
 }
