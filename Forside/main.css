@@ -1,7 +1,10 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body {
   background: #ffffff;
   margin: 0px;
-
 }
 
 body .logo {
@@ -524,7 +527,9 @@ p {
 
 /*kontakt end */
 /*menu start*/
-.categories {
+
+
+#categories {
   height: 100px;
   width: 100%;
   padding: 12px 0px;
@@ -534,14 +539,12 @@ p {
   background-color: white;
   align-items: center;
   justify-content: center;
-
 }
 
 .backplate {
   height: 88px;
   padding: 20px;
   top: 0;
-
 }
 
 .categorystyling {
@@ -553,13 +556,21 @@ p {
   color: black;
   margin: 1px;
   text-align: center;
+  background-color: none;
+}
+
+.active {
+    background-color: red;
+    color: #fff;
+}
+
+.categorystyling2 {
+  background-color: green;
 }
 
 .categorystyling:nth-child(1) {}
 
-.categorystyling:nth-child(2) {
-
-}
+.categorystyling:nth-child(2) {}
 
 .categorystyling:nth-child(5) {}
 
@@ -574,6 +585,39 @@ p {
   font-family: 'Open Sans';
 }
 
+.springrolls {
+  font-weight: bold;
+  font-size: 20pt;
+  padding-top: 36px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#forretter {
+  font-weight: bold;
+  font-size: 20pt;
+  padding-top: 36px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.js-rollsstyling {
+
+  background-color: red;
+}
+
+.rollsstyling {
+  border: 1.5px solid black;
+  padding: 8px 12px;
+  font-family: 'Open Sans';
+  font-size: 8pt;
+  text-decoration: none;
+  color: black;
+  margin: 1px;
+  text-align: center;
+  background-color: none;
+}
+
 .menutitles {
   font-weight: bold;
   font-size: 20pt;
@@ -585,7 +629,6 @@ p {
 .menudesc {
   font-weight: lighter;
   font-size: 12pt;
-
 }
 
 .price {
@@ -593,26 +636,26 @@ p {
   margin-bottom: 12px;
 }
 
-.menuheadersmall{
+.menuheadersmall {
   font-weight: normal;
   font-size: 12pt;
   margin: 0;
 }
 
-h5{
+h5 {
   font-family: 'Open Sans';
   font-size: 12pt;
   font-weight: bold;
   margin: 0;
 }
 
-.dish{
+.dish {
   padding-top: 36px;
   max-width: 75%;
   margin: auto;
 }
 
-.choosebetween{
+.choosebetween {
   font-size: 8pt;
   font-weight: bold;
   margin-top: 12px;
