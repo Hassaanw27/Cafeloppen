@@ -1,6 +1,6 @@
 var $booking = $('.lftbtn');
 var $takeaway = $('.rgtbtn');
-var $widget = $('.instawidget');
+var $widget = $('.slideshow');
 
 $widget.waypoint(function (direction) {
   if (direction == 'down') {

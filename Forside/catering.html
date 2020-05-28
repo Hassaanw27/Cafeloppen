@@ -7,15 +7,15 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="/forside/main.css">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="swiper.min.css">
   <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
   <script src="js/jquery.waypoints.min.js"></script>
   <title>Document</title>
 </head>
 
 <body>
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v7.0"></script>
   <div class="topbar">
     <img class="logo" src="img/cafeloppen.png" alt="">
     <input id="navtoggle" type="checkbox" />
@@ -37,15 +37,26 @@
   </div>
 
 
-  <section class="frontimgcontainer">
-    <h2 class="fronttext">Oplev autentisk thaimad i hjertet af Christianshavn</h2>
-    <div class="btn">
-      <a class="menubutton" href="menu.html">menu</a>
-    </div>
+  <section class="kontakt">
+    <h2>
+      Catering
+    </h2>
+    <h3>
+      For Reservation
+    </h3>
+    <p class="aboutus">Tlf: +45 41 18 41 16<br>eller<br>Book igennem thefork herunder<br><br></p>
+    <iframe src="https://module.lafourchette.com/da_DK/module/209537-18704 " style="border: 1px solid green; width: 100%; min-height:490px;  scrolling:yes;"></iframe>
   </section>
-  <div class="start">
-  </div>
+  <section class="kontakt">
+    <h3>
+      Arrangementer
+    </h3>
+    <p class="aboutus">For bestilling af arrangementer<br>for mere end 20 personer
+      <br>kontakt os på: <br><br>Tlf: +45 41 18 41 16<br>eller<br><a class="emcontact" href="mailto:cafeloppen@cafeloppen.com?subject=feedback">cafeloppen@cafeloppen.com</a></p>
+  </section>
+  <div class="spacer">
 
+  </div>
 
 
 
@@ -59,34 +70,6 @@
   </div>
 
 
-  <section class="updatetxt">
-    <p id="titletxt"></p>
-    <p id="subtxt"></p>
-  </section>
-
-
-
-  <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
-
-  <div class="slideshow">
-    <div class="swiper-container">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide"><img class="slideshowimages" src="img/rolls.jpeg" alt=""></div>
-        <div class="swiper-slide"><img class="slideshowimages" src="img/kokoskarry.jpg" alt=""></div>
-        <div class="swiper-slide"><img class="slideshowimages" src="img/appetizers.jpg" alt=""></div>
-        <div class="swiper-slide"><img class="slideshowimages" src="img/forretter.jpg" alt=""></div>
-        <div class="swiper-slide"><img class="slideshowimages" src="img/frontimage.jpg" alt=""></div>
-        <div class="swiper-slide"><img class="slideshowimages" src="img/stirfry.jpg" alt=""></div>
-        <div class="swiper-slide"><img class="slideshowimages" src="img/traditional.jpg" alt=""></div>
-        <div class="swiper-slide"><img class="slideshowimages" src="img/kokoskarry.jpg" alt=""></div>
-        <div class="swiper-slide"><img class="slideshowimages" src="img/drikke.jpg" alt=""></div>
-        <div class="swiper-slide"><img class="slideshowimages" src="img/kokoskarry.jpg" alt=""></div>
-      </div>
-      <!-- Add Pagination -->
-      <div class="swiper-pagination"></div>
-    </div>
-  </div>
-
   <footer>
     <h3 class="footerheading">ADRESSE<p class="footertxt"><a class="addresstxt" href="https://goo.gl/maps/3kXkhiDm8AKXrQsS6">Sydområdet 4E</a><br> 1440 København K<br> Denmark<br> Christiania Freetown</p>
     </h3>
@@ -99,44 +82,13 @@
     </h3>
     <div class="fødevarestyrelsen">
       <img class="fødevarestyrelsen" src="img/elitemaerke.jpg" alt="Elite Smiley">
-      <a class="fødevarestyrelsen" href="index.html"><br>Se vores smileyrapport her</a>
+      <a class="fødevarestyrelsen" href="https://www.findsmiley.dk/114412"><br>Se vores smileyrapport her</a>
     </div>
     <p class="cpright"> Copyright &copy; <script>
         document.write(new Date().getFullYear())
       </script>
     </p>
   </footer>
-
-
-
-
-  <script type='text/javascript'>
-    var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/1odiRYpebHbk6Cf-ChQf0bp-e-HjoYNrJ-RyaQ8bGgxs/edit?usp=sharing';
-
-    function init() {
-      Tabletop.init({
-        key: publicSpreadsheetUrl,
-        callback: showInfo,
-        simpleSheet: true
-      })
-    }
-
-    function showInfo(data, tabletop) {
-
-      document.getElementById('titletxt').innerHTML = data[0].overskrift;
-      document.getElementById('subtxt').innerHTML = data[0].linjeet;
-      console.log(data);;
-    }
-
-    window.addEventListener('DOMContentLoaded', init)
-  </script>
-  <script>
-    var swiper = new Swiper('.swiper-container', {
-      pagination: {
-        el: '.swiper-pagination',
-      },
-    });
-  </script>
   <script src="js/script.js">
 
   </script>
