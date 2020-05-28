@@ -55,6 +55,8 @@ function onScroll(event) {
   });
 }
 
+import './style.css';
+
 
 
 // $("#navtoggle").change(function () {
