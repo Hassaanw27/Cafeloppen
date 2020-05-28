@@ -14,8 +14,6 @@ $widget.waypoint(function (direction) {
   }
 },{offset:'92%'});
 
-//new//
-
 $(document).ready(function() {
   $(document).on("scroll", onScroll);
 
@@ -55,7 +53,10 @@ function onScroll(event) {
   });
 }
 
-import './style.css';
+
+
+
+
 
 
 
