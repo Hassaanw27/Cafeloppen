@@ -1,5 +1,5 @@
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -382,10 +382,12 @@ footer {
   text-transform: uppercase;
   text-decoration: none;
   color: black;
+  padding-bottom: 24px;
 }
 
 .fødevarestyrelsen img {
   width: 80px;
+  padding-bottom: 0px;
 }
 
 .footertxt {
@@ -454,15 +456,18 @@ footer {
   margin-top: 24px;
   height: auto;
   text-align: center;
-  background-color: #70CC48;
+  background-color: rgba(112, 204, 72, 0.5);
 }
-.slideshow{
+
+.slideshow {
   width: 100vw;
 }
+
 .swiper-container {
   width: 100% !important;
   height: 300px;
 }
+
 .swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -481,9 +486,11 @@ footer {
   -webkit-align-items: center;
   align-items: center;
 }
-.slideshowimages{
+
+.slideshowimages {
   width: 100vw;
 }
+
 iframe {
   width: 90% !important;
   padding-bottom: 24px;
@@ -495,12 +502,11 @@ iframe {
   font-weight: lighter;
   text-transform: uppercase;
   color: white;
-  background-color: #70CC48;
 }
 
 .swiper-container {
-    width: 600px;
-    height: 300px;
+  width: 600px;
+  height: 300px;
 }
 
 /* forside end */
@@ -515,6 +521,7 @@ h3 {
   font-weight: 400;
   font-size: 25px;
   margin-bottom: 8px;
+  margin-top: 64px;
 }
 
 h4 {
@@ -559,8 +566,6 @@ p {
 
 /*kontakt end */
 /*menu start*/
-
-
 #categories {
   height: 100px;
   width: 100%;
@@ -590,7 +595,6 @@ p {
   background-color: none;
 }
 
-
 .categorystyling2 {
   background-color: green;
 }
@@ -605,9 +609,7 @@ p {
 
 .foodimg {
   width: 100%;
-
 }
-
 
 .menuitems {
   text-align: center;
@@ -631,7 +633,6 @@ p {
 }
 
 .js-rollsstyling {
-
   background-color: red;
 }
 
@@ -690,9 +691,46 @@ h5 {
   margin-top: 12px;
 }
 
-/* new styling*/
-
 .active {
   background-color: #70CC48;
   color: white;
+}
+
+/*OM OS starter her*/
+
+.aboutus{
+  width: 80%;
+  margin: auto;
+}
+
+.report {
+  text-align: center;
+  padding-top: 65px;
+}
+.smiley-link{
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.fødevaresecondlink {
+  width: 120px;
+  margin: auto;
+  font-size: 8pt;
+  font-family: 'Open Sans';
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  padding-bottom: 24px;
+}
+.fødevaresecondlinkimg {
+  width: 120px;
+  margin: auto;
+  font-size: 8pt;
+  font-family: 'Open Sans';
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+
 }
