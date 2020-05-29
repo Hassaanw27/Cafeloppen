@@ -308,6 +308,7 @@ body #navtoggle:checked~.navbg>.ulist>.listitem {
   font-weight: normal;
   height: 100%;
   line-height: 8vh;
+  font-weight: bold;
 }
 
 .takeaway {
@@ -316,6 +317,7 @@ body #navtoggle:checked~.navbg>.ulist>.listitem {
   font-weight: normal;
   height: 100%;
   line-height: 8vh;
+  font-weight: bold;
 }
 
 .updatetxt {
@@ -748,7 +750,7 @@ h5 {
 
 .spacer{
   width: 100vw;
-  text-align: center;
+  height: 100px;
 }
 /*Catering starter her*/
 
@@ -759,12 +761,23 @@ h5 {
 
 }
 
-.mailsection form input{
+.nameinput, .emailinput, .phoneinput{
   width: 90%;
   border: 1px solid lightgrey;
   padding: 12px;
 }
 
-iframe{
-  background-color: green !important;
+#msg-box {
+  max-width: 100vw;
+  border-color: 5px solid ;
+}
+
+
+.sub-btn{
+  background-color: #70CC48;
+  color: white;
+  font-weight:bold;
+  text-transform: uppercase;
+  width: 84px;
+  height: 36px;
 }
