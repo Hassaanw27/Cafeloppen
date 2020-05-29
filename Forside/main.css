@@ -748,7 +748,7 @@ h5 {
 
 .spacer{
   width: 100vw;
-  height: 24px;
+  text-align: center;
 }
 /*Catering starter her*/
 
@@ -763,4 +763,8 @@ h5 {
   width: 90%;
   border: 1px solid lightgrey;
   padding: 12px;
+}
+
+iframe{
+  background-color: green !important;
 }
