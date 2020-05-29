@@ -9,14 +9,14 @@ body {
 
 body .logo {
   position: fixed;
-  top: 34px;
+  top: 38px;
   left: 34px;
   z-index: 6;
   font-size: 20px;
   font-weight: 900;
   font-family: 'Open Sans';
   text-transform: uppercase;
-  width: 40%;
+  height: 4vh;
 }
 
 /*forside*/
@@ -91,7 +91,7 @@ body #navtoggle~.navbg {
   width: 100%;
   height: 100px;
   z-index: 3;
-  transition: .5s;
+  transition: .2s;
   transition-delay: .5s;
   overflow: hidden;
 }
@@ -118,7 +118,7 @@ body #navtoggle~.navbg>.ulist>.listitem>a {
   font-weight: 700;
   font-family: 'Open Sans';
   display: block;
-  padding: 30px;
+  padding: 18px 30px;
 }
 
 body #navtoggle:checked~.navbg {
@@ -149,12 +149,13 @@ body #navtoggle:checked~.navbg>.ulist>.listitem {
 }
 
 .fronttext {
-  color: black;
+  color: white;
   font-family: 'Open Sans';
-  font-weight: normal;
+  font-weight: bold;
   margin-top: 200px;
   padding: 48px 24px;
   font-size: 24pt;
+  text-align: center;
 }
 
 .buttons {
@@ -186,6 +187,10 @@ body #navtoggle:checked~.navbg>.ulist>.listitem {
   transition: box-shadow 0.2s;
   text-decoration: none;
   margin: 12px 0px;
+}
+
+.nav {
+  display: none;
 }
 
 /* Overlay */
@@ -704,7 +709,6 @@ h5 {
   width: 80%;
   margin: auto;
   font-weight: lighter;
-
 }
 
 .report {
@@ -739,29 +743,28 @@ h5 {
   text-decoration: none;
   color: black;
 }
+
 /*OM OS slutter her*/
 /*booking starter her*/
-
 .emcontact {
   text-decoration: none;
   color: black;
   margin-bottom: 24px;
 }
 
-.spacer{
+.spacer {
   width: 100vw;
   height: 100px;
 }
-/*Catering starter her*/
 
-.sendmail{
+/*Catering starter her*/
+.sendmail {
   width: 80%;
   margin: auto;
   font-family: 'Open Sans';
-
 }
 
-.nameinput, .emailinput, .phoneinput{
+.nameinput, .emailinput, .phoneinput {
   width: 90%;
   border: 1px solid lightgrey;
   padding: 12px;
@@ -769,15 +772,119 @@ h5 {
 
 #msg-box {
   max-width: 100vw;
-  border-color: 5px solid ;
+  border-color: 5px solid;
 }
 
-
-.sub-btn{
+.sub-btn {
   background-color: #70CC48;
   color: white;
-  font-weight:bold;
+  font-weight: bold;
   text-transform: uppercase;
   width: 84px;
   height: 36px;
+}
+
+.widesection{
+  display: block;
+}
+
+@media only screen and (min-width: 950px) {
+  body {
+    background-color: lightblue;
+  }
+
+  .ulist, .listitem {
+    display: none;
+  }
+
+  label {
+    display: none;
+  }
+
+  .nav {
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 40px;
+    z-index: 4;
+    margin-top: 25px;
+    font-family: 'Open Sans';
+    font-weight: bold;
+  }
+  .nav-link{
+    padding: 0px 12px;
+    text-decoration: none;
+    color: black;
+
+  }
+  .desktopnavbar {
+    list-style: none;
+    display: inline-flex;
+  }
+  .widesection{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    width: 100vw;
+  }
+  .updatetxt {
+    max-width: 80%;
+    height: 400px;
+    background-color: #F2F2F2;
+    text-align: center;
+    border-radius: 4pt;
+    grid-column: 1/3;
+    margin: 20px 50px 20px 20px;
+  }
+  .spacer{
+    display: none;
+  }
+  .slideshow {
+    width: 100%;
+    height: 400px;
+    grid-column: 3/5;
+  }
+  .slideshow div{
+    height: 100%;
+
+  }
+  .slideshowimages {
+    width: 100%;
+  }
+  .frontimgcontainer {
+    width: 100%;
+    height: 800px;
+    position: absolute;
+    top: 0;
+    margin: 0;
+    background-image: url('img/frontimage.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+  }
+  .start {
+    height: 800px;
+  }
+  .menubutton {
+    text-decoration: none;
+    color: white;
+    background-color: #70CC48;
+    padding: 8px 24px;
+    border-radius: 4px;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    text-transform: uppercase;
+    position: fixed;
+    
+  }
+
+  .btn {
+    padding-top: 200px;
+    bottom: 100px;
+    text-align: center;
+
+  }
+  .sticky {
+    display: none;
+  }
 }
