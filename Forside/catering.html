@@ -14,8 +14,7 @@
 </head>
 
 <body>
-  <div id="fb-root"></div>
-  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v7.0"></script>
+
   <div class="topbar">
     <img class="logo" src="img/cafeloppen.png" alt="">
     <input id="navtoggle" type="checkbox" />
@@ -41,12 +40,21 @@
     <h2>
       Catering
     </h2>
-    <h3>
-      For Reservation
-    </h3>
-    <p class="aboutus">Tlf: +45 41 18 41 16<br>eller<br>Book igennem thefork herunder<br><br></p>
-    <iframe src="https://module.lafourchette.com/da_DK/module/209537-18704 " style="border: 1px solid green; width: 100%; min-height:490px;  scrolling:yes;"></iframe>
-  </section>
+    <div class="mailsection">
+      <form action="#" method="post" name="form" class="sendmail">
+        <label for="name">Navn</label><br>
+        <input type="text" name="name" class="nameinput" placeholder="Indtast navn her" required><br><br>
+        <label for="email">Email</label><br>
+        <input type="email" name="email" class="emailinput" placeholder="E-Mail" required><br><br>
+        <label for="phone">Telefonnummer</label><br>
+        <input type="tel" name="phone" class="phoneinput" placeholder="Indtast Telefonnummer" required><br><br>
+        <label for="message">Henvendelse</label><br>
+        <textarea name="msg" id="msg-box" placeholder="Skriv din besked her"></textarea><br>
+        <input type="submit" name="submit" class="sub-btn" value="Send">
+      </form>
+
+    </div>
+    </section>
   <section class="kontakt">
     <h3>
       Arrangementer
