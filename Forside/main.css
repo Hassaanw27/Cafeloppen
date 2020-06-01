@@ -265,8 +265,6 @@ body #navtoggle:checked~.navbg>.ulist>.listitem {
   opacity: 0;
 }
 
-
-
 .lftbtn {
   background-color: #70CC48;
   border-top: 0px;
@@ -366,7 +364,7 @@ footer {
   background-color: #fff8e9;
   width: 100%;
   text-align: center;
-  display:block;
+  display: block;
 }
 
 .fødevarestyrelsen {
@@ -488,7 +486,6 @@ footer {
 }
 
 iframe {
-  width: 90% !important;
   padding-bottom: 24px;
 }
 
@@ -530,6 +527,12 @@ p {
   font-style: light;
 }
 
+.mailsection {
+  text-decoration: none;
+  font-family: 'Open Sans';
+  text-align: center;
+}
+
 .kontakt {
   text-decoration: none;
   font-family: 'Open Sans';
@@ -556,6 +559,29 @@ p {
 .maps {
   text-align: center;
   padding: 1em;
+}
+
+.infosect {
+  text-align: center;
+  font-family: 'Open Sans';
+}
+
+#right {
+  margin-bottom: 48px;
+}
+
+#left {
+  margin-bottom: 48px;
+}
+
+#middle {
+  margin-bottom: 48px;
+}
+
+.maintitle {
+  font-family: 'Open Sans';
+  margin-bottom: 48px;
+  font-size: 36pt;
 }
 
 .embedmaps {}
@@ -668,11 +694,12 @@ p {
   margin: 0;
 }
 
-h5 {
+.titel {
   font-family: 'Open Sans';
-  font-size: 12pt;
-  font-weight: bold;
+  font-size: 16pt;
+  font-weight: normal;
   margin: 0;
+  text-transform: uppercase;
 }
 
 .dish {
@@ -697,6 +724,23 @@ h5 {
   width: 80%;
   margin: auto;
   font-weight: lighter;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+  font-family: 'Open Sans';
+  text-align: center;
+  width: 80%;
+  border-radius: 4px;
+  color: black;
+}
+}
+
+.udfyld {
+  width: 80%;
+  margin: auto;
+  font-weight: lighter;
+  padding: 12px;
+  padding-top: 24px;
 }
 
 .report {
@@ -705,8 +749,32 @@ h5 {
 }
 
 .smiley-link {
+  padding-top: 24px;
   margin-top: 24px;
   margin-bottom: 24px;
+  font-family: 'Open Sans';
+  font-weight: bold;
+  text-align: center;
+}
+
+.frame {
+  width: 80%;
+  margin: auto;
+  border-radius: 4px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.framesecond {
+  width: 80%;
+  margin: auto;
+  border-radius: 4px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.fødevaresmiley {
+  text-align: center;
 }
 
 .fødevaresecondlink {
@@ -730,6 +798,32 @@ h5 {
   text-transform: uppercase;
   text-decoration: none;
   color: black;
+}
+
+.aboutus {
+  width: 80%;
+  font-weight: lighter;
+}
+
+.aboutusmaintext {
+  font-family: 'Open Sans';
+  padding: 0px 24px;
+}
+
+#history {
+  grid-column: 1/2;
+  text-align: center;
+}
+
+#kitchen {
+  grid-column: 2/3;
+  text-align: center;
+}
+
+.titel {
+  font-size: 20pt;
+  text-align: center;
+  padding: 20px 0px;
 }
 
 /*OM OS slutter her*/
@@ -772,9 +866,10 @@ h5 {
   height: 36px;
 }
 
-.widesection{
+.widesection {
   display: block;
 }
+
 .sticky {
   position: fixed;
   top: 92vh;
@@ -791,15 +886,16 @@ h5 {
   display: inline-flex;
 }
 
-
 @media only screen and (min-width: 950px) {
   footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
+
   .sticky {
     display: none;
   }
+
   .ulist, .listitem {
     display: none;
   }
@@ -818,21 +914,24 @@ h5 {
     font-family: 'Open Sans';
     font-weight: bold;
   }
-  .nav-link{
+
+  .nav-link {
     padding: 0px 12px;
     text-decoration: none;
     color: black;
-
   }
+
   .desktopnavbar {
     list-style: none;
     display: inline-flex;
   }
-  .widesection{
+
+  .widesection {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     width: 100vw;
   }
+
   .updatetxt {
     max-width: 80%;
     height: 400px;
@@ -843,17 +942,19 @@ h5 {
     margin: 20px 50px 20px 20px;
     justify-self: center;
   }
-  .spacer{
+
+  .spacer {
     display: none;
   }
-  .slideshow {
 
+  .slideshow {
     width: 80%;
     grid-column: 3/5;
     justify-self: center;
     align-self: center;
   }
-  .slideshow div{
+
+  .slideshow div {
     height: 400px;
     background-color: #F2F2F2;
   }
@@ -870,9 +971,11 @@ h5 {
     background-position: top;
     background-attachment: fixed;
   }
+
   .start {
     height: 800px;
   }
+
   .menubutton {
     text-decoration: none;
     color: white;
@@ -889,13 +992,13 @@ h5 {
     padding-top: 200px;
     bottom: 100px;
     text-align: center;
-
   }
-  .slideshowimages {
 
+  .slideshowimages {
     width: 100%;
   }
-  .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+
+  .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
     top: 350px !important;
   }
 
@@ -907,13 +1010,156 @@ h5 {
     padding-bottom: 24px;
     margin-top: 0px;
   }
+
   .cpright {
     grid-column: 1/6;
   }
+
   .sitelinks {
     text-decoration: none;
     color: black;
     line-height: 24pt;
     text-transform: uppercase;
+  }
+
+  /*Kontakt desktop start*/
+  .infosect {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .tel {
+    grid-column: 2/3;
+  }
+
+  #right {
+    grid-column: 3/4;
+    padding: 36px;
+  }
+
+  #left {
+    grid-column: 1/2;
+    text-align: center;
+    padding: 36px;
+  }
+
+  #middle {
+    grid-column: 2/3;
+    padding: 36px;
+    background-color: rgba(112, 204, 72, 0.5);
+    border-radius: 4px;
+    color: white;
+  }
+
+  .titel {
+    font-size: 20pt;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  /*kontakt desktop slutter her*/
+  /*om desktop starter herunder */
+  section .aboutus {
+    width: 80%;
+    font-weight: lighter;
+    padding: 24px;
+    grid-column: 1/2;
+  }
+
+  .aboutusmaintext {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: 'Open Sans';
+    padding: 0px 24px;
+  }
+
+  #history {
+    grid-column: 1/2;
+    text-align: center;
+  }
+
+  #kitchen {
+    grid-column: 2/3;
+    text-align: center;
+  }
+
+  .socialmedia {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 48px;
+  }
+
+  .frame {
+    background-color: #fff8e9;
+    width: 80%;
+    margin: auto;
+    border-radius: 4px;
+    text-align: center;
+    border-radius: 4px;
+  }
+
+  .framesecond {
+    background-color: rgba(112, 204, 72, 0.5);
+    width: 80%;
+    margin: auto;
+    border-radius: 4px;
+    text-align: center;
+    border-radius: 4px;
+  }
+
+  .instawidget {
+    width: 100%;
+    margin: auto;
+    margin-top: 24px;
+    height: auto;
+    text-align: center;
+    background-color: rgba(112, 204, 72, 0.5);
+  }
+
+  .someinst {
+    width: 350px;
+  }
+
+  .inst .framesecond .smiley-link {
+    color: white;
+  }
+
+  /*om desktop slutter herunder */
+  /*catering desktop starter herunder */
+  .cateringmain {
+    text-decoration: none;
+    font-family: 'Open Sans';
+    text-align: center;
+    grid-column: 2/3;
+  }
+
+  .udfyld {
+    width: 80%;
+    margin: auto;
+    font-weight: lighter;
+    padding: 12px;
+  }
+
+  .conferencetekst {
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+    font-family: 'Open Sans';
+    text-align: center;
+    background-color: rgba(112, 204, 72, 0.5);
+    width: 80%;
+    border-radius: 4px;
+  }
+  .emcontact {
+    text-decoration: none;
+    margin-bottom: 24px;
+  }
+  .sub-btn {
+    background-color: #70CC48;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 84px;
+    height: 36px;
   }
 }
