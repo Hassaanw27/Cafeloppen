@@ -864,6 +864,7 @@ p {
   text-transform: uppercase;
   width: 84px;
   height: 36px;
+  margin: 24px;
 }
 
 .widesection {
@@ -1137,7 +1138,7 @@ p {
     width: 80%;
     margin: auto;
     font-weight: lighter;
-    padding: 12px;
+    margin-bottom: 24px;
   }
 
   .conferencetekst {
@@ -1159,7 +1160,8 @@ p {
     color: white;
     font-weight: bold;
     text-transform: uppercase;
-    width: 84px;
+    width: 106px;
     height: 36px;
+
   }
 }
