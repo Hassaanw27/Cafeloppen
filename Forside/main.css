@@ -1,10 +1,12 @@
 html {
   scroll-behavior: smooth;
+
 }
 
 body {
   background: #ffffff;
   margin: 0px;
+
 }
 
 body .logo {
@@ -23,6 +25,8 @@ body .logo {
 .ulist {
   list-style: none;
 }
+
+
 
 body .logo>span {
   text-transform: none;
@@ -151,10 +155,10 @@ body #navtoggle:checked~.navbg>.ulist>.listitem {
 .fronttext {
   color: white;
   font-family: 'Open Sans';
-  font-weight: bold;
-  margin-top: 200px;
+  font-weight: lighter;
+  margin-top: 250px;
   padding: 48px 24px;
-  font-size: 24pt;
+  font-size: 20pt;
   text-align: center;
 }
 
@@ -313,7 +317,6 @@ body #navtoggle:checked~.navbg>.ulist>.listitem {
 .updatetxt {
   width: 85vw;
   height: 400px;
-  background-color: #F2F2F2;
   text-align: center;
   margin: auto;
   border-radius: 4pt;
@@ -362,7 +365,7 @@ body #navtoggle:checked~.navbg>.ulist>.listitem {
 footer {
   margin-top: 0px;
   background-color: #fff8e9;
-  width: 100%;
+  width: 100vw;
   text-align: center;
   display: block;
 }
@@ -912,17 +915,35 @@ p {
     display: none;
   }
 
-  .nav {
-    display: block;
-    position: absolute;
-    top: 0px;
-    right: 40px;
-    z-index: 4;
-    margin-top: 25px;
+  .fronttext {
+    color: white;
     font-family: 'Open Sans';
-    font-weight: bold;
+    font-weight: lighter;
+    margin-top: 250px;
+    padding: 48px 24px;
+    font-size: 48pt;
+    text-align: center;
   }
 
+  .nav {
+    display: block;
+    position: relative;
+    bottom: 0;
+    z-index: 4;
+    margin: auto;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    width: 100%;
+    height: 100px;
+
+  }
+
+  .desktoplogo{
+    width: 100vw;
+    text-align: center;
+    height: 40px;
+    margin-top: 12px;
+  }
   .nav-link {
     padding: 0px 12px;
     text-decoration: none;
@@ -930,8 +951,38 @@ p {
   }
 
   .desktopnavbar {
-    list-style: none;
+    list-style-type: none;
     display: inline-flex;
+  }
+
+  .newlogo {
+
+    top: 38px;
+    left: 34px;
+    z-index: 6;
+    font-size: 20px;
+    font-weight: 900;
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+    height: 4vh;
+  }
+
+  body .logo {
+    display: none;
+  }
+
+  body #navtoggle~.navbg {
+    background: #fff8e9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 3;
+    transition: .2s;
+    transition-delay: .5s;
+    overflow: hidden;
+    text-align: center;
   }
 
   .widesection {
@@ -943,7 +994,6 @@ p {
   .updatetxt {
     max-width: 80%;
     height: 400px;
-    background-color: #F2F2F2;
     text-align: center;
     border-radius: 4pt;
     grid-column: 1/3;
@@ -964,11 +1014,10 @@ p {
 
   .slideshow div {
     height: 400px;
-    background-color: #F2F2F2;
   }
 
   .frontimgcontainer {
-    width: 100%;
+    width: 100vw;
     height: 800px;
     position: absolute;
     top: 0;
@@ -997,7 +1046,7 @@ p {
   }
 
   .btn {
-    padding-top: 200px;
+    padding-top: 100px;
     bottom: 100px;
     text-align: center;
   }
