@@ -398,7 +398,6 @@ footer {
   font-size: 14pt;
   padding: 36px 24px 0px 24px;
   margin-top: 0;
-
 }
 
 .sitemap {
@@ -509,7 +508,6 @@ body #navtoggle {
 }
 
 h3 {
-
   text-transform: uppercase;
   font-weight: 400;
   font-size: 25px;
@@ -593,6 +591,7 @@ h5 {
   margin-top: 0;
   margin: 0;
 }
+
 #categories {
   height: 100px;
   width: 100%;
@@ -1297,9 +1296,10 @@ h5 {
     margin-bottom: 64px;
     grid-template-areas: ". . . . . ."". . . . . .";
   }
+
   .textsection4 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 1px 1px;
     margin: auto;
@@ -1307,6 +1307,106 @@ h5 {
     margin-top: 64px;
     margin-bottom: 64px;
     grid-template-areas: ". . . . . ."". . . . . .";
+  }
+
+  .textsection5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "wine1 wine5 wine9""wine2 wine6 wine10""wine3 wine7 wine11""wine4 wine8 wine12";
+  }
+
+  .wine1 {
+    grid-area: wine1;
+  }
+
+  .wine2 {
+    grid-area: wine2;
+  }
+
+  .wine3 {
+    grid-area: wine3;
+  }
+
+  .wine4 {
+    grid-area: wine4;
+  }
+
+  .wine5 {
+    grid-area: wine5;
+  }
+
+  .wine6 {
+    grid-area: wine6;
+  }
+
+  .wine7 {
+    grid-area: wine7;
+  }
+
+  .wine8 {
+    grid-area: wine8;
+  }
+
+  .wine12 {
+    grid-area: wine12;
+  }
+
+  .wine11 {
+    grid-area: wine11;
+  }
+
+  .wine10 {
+    grid-area: wine10;
+  }
+
+  .wine9 {
+    grid-area: wine9;
+  }
+
+  .textsection6 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "Cttitle Cttitle""ct1 ct5""ct2 ct6""ct3 ct7""ct4 ct8";
+  }
+
+  .Cttitle {
+    grid-area: Cttitle;
+  }
+
+  .ct1 {
+    grid-area: ct1;
+  }
+
+  .ct2 {
+    grid-area: ct2;
+  }
+
+  .ct3 {
+    grid-area: ct3;
+  }
+
+  .ct4 {
+    grid-area: ct4;
+  }
+
+  .ct5 {
+    grid-area: ct5;
+  }
+
+  .ct6 {
+    grid-area: ct6;
+  }
+
+  .ct7 {
+    grid-area: ct7;
+  }
+
+  .ct8 {
+    grid-area: ct8;
   }
 
   .dish {
@@ -1356,29 +1456,63 @@ h5 {
   .dessert5 {
     grid-column: 4/7;
   }
-    /*menu desktop slutter her */
-    /*book bord desktop starter herunder */
-    .mainwrapper{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      padding: 10%;
-      padding-top: 0;
-    }
 
-    .arrangementerinside{
-      background-color: rgba(232, 161, 16, 0.5);
-      margin-left: 24px;
-      margin-right: 24px;
-      border-radius: 4px;
-      padding-top: 12px;
-    }
-    .arrangementerinside h3{
-      margin: 0;
-    }
-    .theforkplugin h3{
-      margin: 0;
-    }
-    .forbestillingsektion{
+  .vg1 {
+    grid-column: 1/2;
+  }
 
-    }
+  .vg2 {
+    grid-column: 2/3;
+  }
+
+  .vg3 {
+    grid-column: 3/4;
+  }
+
+  .vg4 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .vg5 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  .vg6 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+
+  .vg7 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+
+  /*menu desktop slutter her */
+  /*book bord desktop starter herunder */
+  .mainwrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10%;
+    padding-top: 0;
+  }
+
+  .arrangementerinside {
+    background-color: rgba(232, 161, 16, 0.5);
+    margin-left: 24px;
+    margin-right: 24px;
+    border-radius: 4px;
+    padding-top: 12px;
+  }
+
+  .arrangementerinside h3 {
+    margin: 0;
+  }
+
+  .theforkplugin h3 {
+    margin: 0;
+  }
+
+  .forbestillingsektion {}
 }
