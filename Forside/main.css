@@ -18,6 +18,30 @@ body .logo {
   text-transform: uppercase;
   height: 4vh;
 }
+.cookietitle{
+  width: 70vw;
+  margin: auto;
+  padding: 48px 0px;
+
+  font-family: 'Open Sans'
+}
+
+.cookiepolicy{
+  text-align: left;
+  font-size: 10pt;
+  font-weight: normal;
+}
+.nowrap{
+  width: 70vw;
+  margin: auto;
+  font-family: 'Open Sans';
+
+}
+.cookies h3{
+  font-size: 12pt;
+  margin: 0;
+  font-weight: bold;
+}
 
 /*forside*/
 .ulist {
@@ -88,8 +112,8 @@ body #navtoggle~.navbg {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100px;
+  width: 100vw;
+  height: 80px;
   z-index: 3;
   transition: .2s;
   transition-delay: .5s;
@@ -132,7 +156,7 @@ body #navtoggle:checked~.navbg>.ulist>.listitem {
 }
 
 .topbar {
-  height: 100px;
+  height: 80px;
   color: red;
 }
 
@@ -592,8 +616,120 @@ h5 {
   margin: 0;
 }
 
+
+.pricelistcoffee h5 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.coffeesection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "drk1 ep""drk2 am""drk3 mc""drk4 cl""drk5 cp""drk6 cm""drk7 cot""drk8 vc";
+}
+.sectiontitle {
+  font-size: 14pt;
+  margin-top: 84px;
+  text-transform:  uppercase;
+}
+.liststyling {
+  list-style-type: none;
+  font-size: 12pt;
+  padding: 0;
+}
+
+.cdrink {
+  width: 70vw;
+  margin: auto;
+}
+
+.ep {
+  grid-area: ep;
+}
+
+.am {
+  grid-area: am;
+}
+
+.mc {
+  grid-area: mc;
+}
+
+.cl {
+  grid-area: cl;
+}
+
+.cp {
+  grid-area: cp;
+}
+
+.cm {
+  grid-area: cm;
+}
+
+.cot {
+  grid-area: cot;
+}
+
+.vc {
+  grid-area: vc;
+}
+
+.drk1 {
+  grid-area: drk1;
+}
+
+.drk2 {
+  grid-area: drk2;
+}
+
+.drk3 {
+  grid-row: 4/5;
+}
+
+.drk4 {
+  grid-area: drk4;
+}
+
+.drk5 {
+  grid-area: drk5;
+}
+
+.drk6 {
+  grid-area: drk6;
+}
+
+.drk7 {
+  grid-area: drk7;
+}
+
+.drk8 {
+  grid-area: drk8;
+}
+
+.dish {
+  padding-top: 0px;
+  max-width: 75%;
+  text-align: center;
+  font-size: 18pt;
+  margin-top: 48px;
+}
+
+.price {
+  margin-top: 10px;
+  font-weight: bold;
+  bottom: 0px;
+  width: 100%;
+}
+
+h5 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
 #categories {
-  height: 100px;
+  height: 120px;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -604,7 +740,7 @@ h5 {
 }
 
 .backplate {
-  height: 88px;
+  height: 120px;
   top: 0;
 }
 
@@ -1267,6 +1403,11 @@ h5 {
     width: 80vw;
   }
 
+  .sectiontitle {
+    font-size: 24pt;
+    margin-top: 0px;
+  }
+
   .textsection1 {
     margin: auto;
     width: 80vw;
@@ -1314,6 +1455,9 @@ h5 {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 1px 1px;
+    margin: auto;
+    width: 70vw;
+    margin-bottom: 64px;
     grid-template-areas: "wine1 wine5 wine9""wine2 wine6 wine10""wine3 wine7 wine11""wine4 wine8 wine12";
   }
 
@@ -1370,6 +1514,10 @@ h5 {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr;
     gap: 1px 1px;
+    margin: auto;
+    width: 70vw;
+    margin-top: 64px;
+    margin-bottom: 64px;
     grid-template-areas: "Cttitle Cttitle""ct1 ct5""ct2 ct6""ct3 ct7""ct4 ct8";
   }
 
@@ -1407,6 +1555,163 @@ h5 {
 
   .ct8 {
     grid-area: ct8;
+  }
+
+  .textsection7 {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 1fr;
+    grid-template-rows: 0.2fr 1fr 1fr;
+    gap: 1px 1px;
+    margin: auto;
+    width: 70vw;
+    margin-top: 64px;
+    margin-bottom: 64px;
+    grid-template-areas: "hjktitle hjktitle hjktitle""hjk1 hjk2 hkj3""hjk1 hjk4 hjk4";
+  }
+
+  .hjktitle {
+    grid-area: hjktitle;
+  }
+
+  .hjk1 {
+    grid-area: hjk1;
+  }
+
+  .hjk2 {
+    grid-area: hjk2;
+  }
+
+  .hkj3 {
+    grid-area: hkj3;
+  }
+
+  .textsection8 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr 1fr 1fr;
+    gap: 1px 1px;
+    margin: auto;
+    width: 70vw;
+    margin-top: 64px;
+    margin-bottom: 64px;
+    grid-template-areas: "kdtitle kdtitle""kd1 kd3""kd2 kd4""kd5 kd5";
+  }
+
+  .kdtitle {
+    grid-area: kdtitle;
+  }
+
+  .kd1 {
+    grid-area: kd1;
+  }
+
+  .kd2 {
+    grid-area: kd2;
+  }
+
+  .kd3 {
+    grid-area: kd3;
+  }
+
+  .kd4 {
+    grid-area: kd4;
+  }
+
+  .kd5 {
+    grid-area: kd5;
+  }
+
+  .liststyling {
+    list-style-type: none;
+  }
+
+  .pricelistcoffee .price {
+    font-size: 0.83em;
+  }
+
+  .pricelistcoffee h5 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+
+  .coffeesection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "drk1 ep""drk2 am""drk3 mc""drk4 cl""drk5 cp""drk6 cm""drk7 cot""drk8 vc";
+    width: 50%;
+  }
+
+  .cdrink {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 70vw;
+    margin: auto;
+  }
+
+  .ep {
+    grid-area: ep;
+  }
+
+  .am {
+    grid-area: am;
+  }
+
+  .mc {
+    grid-area: mc;
+  }
+
+  .cl {
+    grid-area: cl;
+  }
+
+  .cp {
+    grid-area: cp;
+  }
+
+  .cm {
+    grid-area: cm;
+  }
+
+  .cot {
+    grid-area: cot;
+  }
+
+  .vc {
+    grid-area: vc;
+  }
+
+  .drk1 {
+    grid-area: drk1;
+  }
+
+  .drk2 {
+    grid-area: drk2;
+  }
+
+  .drk3 {
+    grid-row: 4/5;
+  }
+
+  .drk4 {
+    grid-area: drk4;
+  }
+
+  .drk5 {
+    grid-area: drk5;
+  }
+
+  .drk6 {
+    grid-area: drk6;
+  }
+
+  .drk7 {
+    grid-area: drk7;
+  }
+
+  .drk8 {
+    grid-area: drk8;
   }
 
   .dish {
@@ -1487,6 +1792,30 @@ h5 {
   .vg7 {
     grid-column: 2/3;
     grid-row: 3/4;
+  }
+
+  .textsection10 {
+    margin-top: 64px;
+    margin-bottom: 64px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "thetitle thetitle""the1 the2";
+    width: 70vw;
+    margin: auto;
+  }
+
+  .thetitle {
+    grid-area: thetitle;
+  }
+
+  .the1 {
+    grid-area: the1;
+  }
+
+  .the2 {
+    grid-area: the2;
   }
 
   /*menu desktop slutter her */
