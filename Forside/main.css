@@ -1022,6 +1022,7 @@ h5 {
   top: 92vh;
   width: 100vw;
   height: 8vh;
+  bottom: 0px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   text-align: center;
@@ -1031,6 +1032,43 @@ h5 {
   text-transform: uppercase;
   z-index: 2;
   display: inline-flex;
+}
+
+.mobile-bottom-nav{
+	position:fixed;
+	bottom:0;
+	left:0;
+	right:0;
+	z-index:1000;
+
+	//give nav it's own compsite layer
+	will-change:transform;
+	transform: translateZ(0);
+
+	display:flex;
+
+	height:50px;
+
+	box-shadow: 0 -2px 5px -2px #333;
+	background-color:#fff;
+
+	&__item{
+		flex-grow:1;
+		text-align:center;
+		font-size:12px;
+
+		display:flex;
+		flex-direction:column;
+		justify-content:center;
+	}
+	&__item--active{
+		//dev
+		color:red;
+	}
+	&__item-content{
+		display:flex;
+		flex-direction:column;
+	}
 }
 
 @media only screen and (min-width: 950px) {
