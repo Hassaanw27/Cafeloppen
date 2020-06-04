@@ -13,7 +13,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
   <script src="js/jquery.waypoints.min.js"></script>
-  <title>Document</title>
+  <title>Cafeloppen Christiania</title>
+  <meta name="title" content="Cafeloppen Christiania">
+  <meta name="description" content="Cafeloppen byder på autentisk mad fra Thailand i hyggelige omgivelser på Christiania. Vi har alt fra veganske retter til thai-inspirerede cocktails. Klik ind og se udvalget!">
 </head>
 
 <body>
@@ -81,8 +83,11 @@
 
   <div class="widesection">
     <section class="updatetxt">
-      <p id="titletxt"></p>
-      <p id="subtxt"></p>
+      <p id="titletxt" class="sheetsstyling"></p>
+      <p id="lineonetxt" class="sheetsstyling"></p>
+      <p id="linetwotext" class="sheetsstyling"></p>
+      <p id="linethreetext" class="sheetsstyling"></p>
+      <p id="linefourtext" class="sheetsstyling"></p>
     </section>
     <div class="spacer">
 
@@ -121,7 +126,8 @@
 
     <h3 class="sitemap">
       <div class="sitemap-links">
-        <div class="Second"><a class="sitelinks Second" href="takeaway.html">Take Away</a><br><a class="sitelinks Second" href="catering.html">catering</a><br><a class="sitelinks Second" href="omos.html">om os</a><br><a class="sitelinks Second" href="kontakt.html">kontakt</a></div>
+        <div class="Second"><a class="sitelinks Second" href="takeaway.html">Take Away</a><br><a class="sitelinks Second" href="catering.html">catering</a><br><a class="sitelinks Second" href="omos.html">om os</a><br><a class="sitelinks Second"
+            href="kontakt.html">kontakt</a></div>
         <div class="First"><a class="sitelinks first" href="index.html">Forside</a><br><a class="sitelinks first" href="menu.html">menu</a><br><a class="sitelinks first" href="bookbord.html">Book Bord</a></div>
       </div>
       <br>
@@ -154,7 +160,10 @@
     function showInfo(data, tabletop) {
 
       document.getElementById('titletxt').innerHTML = data[0].overskrift;
-      document.getElementById('subtxt').innerHTML = data[0].linjeet;
+      document.getElementById('lineonetxt').innerHTML = data[0].linjeet;
+      document.getElementById('linetwotext').innerHTML = data[0].linjeto;
+      document.getElementById('linethreetext').innerHTML = data[0].linjetre;
+      document.getElementById('linefourtext').innerHTML = data[0].linjefire;
       console.log(data);;
     }
 
