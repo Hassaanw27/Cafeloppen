@@ -7,6 +7,8 @@ body {
   margin: 0px;
 }
 
+/*                                                                        Mobile Start                                              */ 
+
 body .logo {
   position: fixed;
   top: 30px;
@@ -31,6 +33,8 @@ body .logo {
   font-size: 10pt;
   font-weight: normal;
 }
+
+/* Genbrug af grid */
 .nowrap{
   width: 70vw;
   margin: auto;
@@ -55,9 +59,11 @@ body .logo>span {
   font-size: 12px;
 }
 
+/* Burger bar check box Start */
 body #navtoggle {
   visibility: hidden;
 }
+
 
 body #navtoggle+label {
   position: fixed;
@@ -79,6 +85,8 @@ body #navtoggle+label span {
   background: #020304;
   transition: .5s;
 }
+
+/* Burger bar streger start */
 
 body #navtoggle+label span:first-child {
   top: 3px;
@@ -107,6 +115,10 @@ body #navtoggle:checked+label span:last-child {
   transform: rotate(-405deg);
 }
 
+/* Burger bar streger Slut */
+
+/* Burger bar åben start */
+
 body #navtoggle~.navbg {
   background: #fff8e9;
   position: fixed;
@@ -128,7 +140,9 @@ body #navtoggle~.navbg>.ulist {
   right: 20%;
   padding: 0;
 }
+/* Burger bar åben slut */
 
+/* Burger bar baggrund animation start */
 body #navtoggle~.navbg>.ulist>.listitem {
   opacity: 0;
   transition: .5s;
@@ -155,10 +169,14 @@ body #navtoggle:checked~.navbg>.ulist>.listitem {
   transition-delay: .5s;
 }
 
+/* Burger bar baggrund animation Slut */
+
+/* Skubber forside elementer ned så man kan se billedet */
 .topbar {
   height: 80px;
   color: red;
 }
+ 
 
 .frontimgcontainer {
   width: 100vw;
@@ -187,6 +205,7 @@ body #navtoggle:checked~.navbg>.ulist>.listitem {
   text-align: center;
 }
 
+/* Skal slettes 
 .pure-material-button-contained {
   position: relative;
   display: inline-block;
@@ -212,7 +231,7 @@ body #navtoggle:checked~.navbg>.ulist>.listitem {
   text-decoration: none;
   margin: 12px 0px;
 }
-
+*/
 .nav {
   display: none;
 }
@@ -288,7 +307,8 @@ body #navtoggle:checked~.navbg>.ulist>.listitem {
 .pure-material-button-contained:disabled::after {
   opacity: 0;
 }
-
+ 
+/* Flaoter Book bord */
 .lftbtn {
   background-color: #E8A110;
   border-top: 0px;
@@ -302,6 +322,7 @@ body #navtoggle:checked~.navbg>.ulist>.listitem {
   border-top: 1px solid grey;
 }
 
+/* Floater Menu */
 .rgtbtn {
   color: black;
   background-color: #fff8e9;
@@ -316,6 +337,8 @@ body #navtoggle:checked~.navbg>.ulist>.listitem {
   border-top: 1px solid grey;
 }
 
+
+/* Flaoter Book Bord*/
 .bordbooking {
   color: white;
   text-decoration: none;
@@ -324,6 +347,8 @@ body #navtoggle:checked~.navbg>.ulist>.listitem {
   line-height: 8vh;
   font-weight: bold;
 }
+
+/* Flaoter menu*/
 
 .takeaway {
   color: black;
@@ -334,6 +359,7 @@ body #navtoggle:checked~.navbg>.ulist>.listitem {
   font-weight: bold;
 }
 
+/* Google Sheets Blog Start*/
 .updatetxt {
   width: 85vw;
   height: 400px;
@@ -363,7 +389,11 @@ body #navtoggle:checked~.navbg>.ulist>.listitem {
   font-family: 'Open Sans';
   margin: 12px 0px;
 }
+/* Google Sheets Blog Slut*/
 
+
+
+/* Baggrunds farve */
 .red {
   background-color: #fffff0;
 }
@@ -494,7 +524,7 @@ footer {
   text-align: center;
   font-size: 18px;
   background: #fff;
-  /* Center slide text vertically */
+  /* Center slide billeder horisontalt */
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -513,10 +543,12 @@ footer {
   width: 100vw;
 }
 
+/* Facebook, Lightwidget, Google Maps */
 iframe {
   padding-bottom: 24px;
 }
 
+/* Følg os */
 .foelgos {
   padding: 20px 20px 0px 20px;
   font-family: 'Open Sans';
@@ -531,7 +563,7 @@ iframe {
 }
 
 /* forside end */
-/*kontakt*/
+/*kontakt Start*/
 body #navtoggle {
   visibility: hidden;
 }
@@ -649,6 +681,8 @@ h5 {
   width: 70vw;
   margin: auto;
 }
+
+/* Drikke vare forkortelser (ep=Espresso)*/
 
 .ep {
   grid-area: ep;
@@ -772,13 +806,6 @@ h5 {
   background-color: green;
 }
 
-.categorystyling:nth-child(1) {}
-
-.categorystyling:nth-child(2) {}
-
-.categorystyling:nth-child(5) {}
-
-.categorystyling:nth-child(6) {}
 
 .foodimg {
   width: 100%;
@@ -979,6 +1006,8 @@ h5 {
 
 /*OM OS slutter her*/
 /*booking starter her*/
+
+/* Email */
 .emcontact {
   text-decoration: none;
   color: black;
@@ -996,6 +1025,8 @@ h5 {
   margin: auto;
   font-family: 'Open Sans';
 }
+
+/* Email formular*/
 
 .nameinput, .emailinput, .phoneinput {
   width: 90%;
@@ -1021,7 +1052,7 @@ h5 {
 .widesection {
   display: block;
 }
-
+/* Floater i bunden på alle sider */
 .sticky {
   position: fixed;
   top: 80vh;
@@ -1042,6 +1073,9 @@ h5 {
   display: block;
 }
 
+/*                                                                        Mobile Slut                                              */
+
+/*                                                                        DESKTOP START                                              */                     
 @media only screen and (min-width: 950px) {
   footer {
     display: grid;
@@ -1050,10 +1084,13 @@ h5 {
     padding-top: 30px;
   }
 
+  /* Skjuler sticky på desktop */
   .sticky {
     display: none;
   }
 
+
+  /* Burger baren Skjules på desktop */
   .ulist, .listitem {
     display: none;
   }
@@ -1110,16 +1147,7 @@ h5 {
     color: red;
   }
 
-  .newlogo {
-    top: 38px;
-    left: 34px;
-    z-index: 6;
-    font-size: 20px;
-    font-weight: 900;
-    font-family: 'Open Sans';
-    text-transform: uppercase;
-    height: 7vh;
-  }
+
 
   body .logo {}
 
@@ -1207,7 +1235,7 @@ h5 {
   .slideshowimages {
     width: 100%;
   }
-
+/* Prikker under galleri */
   .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
     top: 350px !important;
   }
@@ -1355,7 +1383,7 @@ h5 {
     color: white;
   }
 
-  /*om desktop slutter herunder */
+  /*om os desktop slutter herunder */
   /*catering desktop starter herunder */
   .cateringmain {
     text-decoration: none;
@@ -1401,6 +1429,8 @@ h5 {
   #categories {
     display: none;
   }
+
+  /* Kategori baggrund */
 
   .backplate {
     display: none;
@@ -1851,3 +1881,5 @@ h5 {
   }
 
 }
+
+/*                                                                        DESKTOP Slut                                              */ 

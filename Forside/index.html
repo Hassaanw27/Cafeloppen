@@ -5,31 +5,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="robots" content="noimageindex, nofollow, nosnippet">
+  <meta name="robots" content="noimageindex, nofollow, nosnippet"> <!-- Ingen google søgning-->
   <link rel="stylesheet" href="main.css">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet"> <!-- Font til siden-->
   <link rel="stylesheet" href="swiper.min.css">
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script> <!-- Google sheets Blog-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script> <!-- Galleri swipe funktion-->
+  <script src="js/jquery.waypoints.min.js"></script> <!-- Floater border -->
   <title>Cafeloppen Christiania</title>
   <meta name="title" content="Cafeloppen Christiania">
+  <!-- Google Søgning Beskrivelse-->
   <meta name="description" content="Cafeloppen byder på autentisk mad fra Thailand i hyggelige omgivelser på Christiania. Vi har alt fra veganske retter til thai-inspirerede cocktails. Klik ind og se udvalget!">
 </head>
 
 <body>
+  <!-- Logo-->
   <div class="topbar">
     <div class="logoedit">
       <a href="index.html"><img class="logo" src="img/cafeloppen.png" alt="Logo for Cafeloppen"></a>
     </div>
-
+    <!-- Mobile Burger bar funktion Start -->
     <input id="navtoggle" type="checkbox" />
     <label for="navtoggle">
       <span></span>
       <span></span>
       <span></span>
     </label>
+  <!-- Mobile Burger bar funktion Slut -->
     <nav class="navbg">
       <ul class="ulist">
         <li class="listitem"><a href="index.html">Forside</a></li>
@@ -40,6 +43,7 @@
         <li class="listitem"><a href="omos.html">Om Os</a></li>
         <li class="listitem"><a href="kontakt.html">Kontakt</a></li>
       </ul>
+      <!-- Desktop Nav bar start-->
       <div class="nav">
         <ul class="desktopnavbar">
           <li><a href="index.html" class="nav-link" style="color: #E8A110;">Forside</a></li>
@@ -51,17 +55,19 @@
           <li><a href="kontakt.html" class="nav-link">Kontakt</a></li>
         </ul>
       </div>
+      <!-- Desktop Nav bar Slut-->
+
     </nav>
 
   </div>
 
 
-
+<!-- Forside billede samt tekst-->
 
   <section class="frontimgcontainer">
     <h2 class="fronttext">Oplev autentisk thaimad <br>i hjertet af Christianshavn</h2>
     <div class="btn">
-      <a class="menubutton" href="menu.html">menu</a>
+      <a class="menubutton" href="menu.html">Take away</a> 
     </div>
   </section>
   <div class="start">
@@ -69,7 +75,7 @@
 
 
 
-
+<!-- book bord og menu floater til mobile-->
   <div class="sticky">
     <div class="lftbtn">
       <a class="bordbooking" href="bookbord.html">book bord</a>
@@ -80,6 +86,7 @@
   </div>
 
 
+  <!-- Google Sheets Blog -->
 
   <div class="widesection">
     <section class="updatetxt">
@@ -91,6 +98,8 @@
     </section>
     <div class="spacer">
 
+
+      <!-- Galleri til forside -->
     </div>
     <div class="slideshow">
       <div class="swiper-container">
@@ -106,7 +115,7 @@
           <div class="swiper-slide"><img class="slideshowimages" src="img/galleri2.jpg" alt=""></div>
           <div class="swiper-slide"><img class="slideshowimages" src="img/galleri10.jpg" alt=""></div>
         </div>
-        <!-- Add Pagination -->
+        <!-- Prikker i bunden af galleri -->
         <div class="swiper-pagination"></div>
       </div>
     </div>
@@ -137,6 +146,7 @@
       <a class="fødevarestyrelsen" href="https://www.findsmiley.dk/114412"><br>Se vores smileyrapport her<br></a>
       <a class="fødevarestyrelsen" href="cookiepolitik.html"><br>Se vores Cookiepolitik her</a>
     </div>
+    <!-- Holder Copyright opdateret-->
     <p class="cpright"> Copyright &copy; <script>
         document.write(new Date().getFullYear())
       </script>
@@ -145,7 +155,7 @@
 
 
 
-
+<!-- Google Sheet Blog Start-->
   <script type='text/javascript'>
     var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/1odiRYpebHbk6Cf-ChQf0bp-e-HjoYNrJ-RyaQ8bGgxs/edit?usp=sharing';
 
@@ -169,6 +179,11 @@
 
     window.addEventListener('DOMContentLoaded', init)
   </script>
+
+<!-- Google Sheets Blog Slut-->
+
+
+<!-- Galleri Swipe funktion-->
   <script>
     var swiper = new Swiper('.swiper-container', {
       pagination: {
